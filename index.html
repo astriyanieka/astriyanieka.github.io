@@ -15,6 +15,11 @@
     <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
     <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
     <style>
+    .icon_mempelai{
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
     .bg_quotes1{
         background-image: url('images/pictures/bg_quotes1.jpg');
     }
@@ -87,8 +92,8 @@
             </div>
             <div class="card card-style">
                 <div class="content text-center">
-                    <h5>Wedding Invitation</h5>
-                    <h4 style="    font-family: 'Source Sans Pro' !important;">Mempelai Pria & Mempelai Wanita</h4>
+                    <h5>The Wedding</h5>
+                    <h4 style="font-family: 'Source Sans Pro' !important;">Mempelai Pria & Mempelai Wanita</h4>
                 </div>
                 <div class="divider divider-small mb-3 bg-highlight"></div>
 
@@ -120,6 +125,31 @@
                     </div>            
                 </div>
             </div>
+            <div class="card card-style text-center">
+                <div class="content pb-2">
+                    <p class="boxed-text-xl">
+                        Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah Semoga ridho-Mu tercerah mengiringi pernikahan kami :
+                    </p>
+                    <div class="row mb-0">
+                        <div class="col-6 pr-0 pl-0">
+                            <div class="card card-style" style="margin: 0px 5px 30px 5px;">
+                                <img src="images/pictures/cewek.png" class="img-fluid icon_mempelai">
+                                <div class="content pb-0">
+                                    <p>Eka Astriyani, S.Kom</p>
+                                </div>            
+                            </div>        
+                        </div>
+                        <div class="col-6 pl-0 pr-0">
+                            <div class="card card-style" style="margin: 0px 5px 30px 5px;">
+                                <img src="images/pictures/cowok.png" class="img-fluid icon_mempelai">
+                                <div class="content pb-0">
+                                    <p>Yudi Pratama, S.Kom</p>
+                                </div>            
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div data-card-height="200" class="card card-style bg_quotes1" style="height: 200px;">
                 <div class="card-center">
                     <p class="color-white pr-3 pl-3 mb-0">
@@ -135,18 +165,18 @@
 
             <div class="double-slider text-center owl-carousel owl-no-dots">
                 <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
-                    <img src="images/cashless/bca_icon.png" class="img-fluid img-responsive">
+                    <img data-menu="menu-tips-1" src="images/cashless/bca_icon.png" class="img-fluid img-responsive">
                 </div>
                 <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
-                    <img src="images/cashless/ovo_icon.png" class="img-fluid img-responsive">
+                    <img data-menu="detail-ovo" src="images/cashless/ovo_icon.png" class="img-fluid img-responsive">
                 </div>
                 <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
                     <img src="images/cashless/gopay_icon.png" class="img-fluid img-responsive">
                 </div>
                 <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
-                 <img src="images/cashless/shopee_icon.png" class="img-fluid img-responsive">
-                </div>
-            </div>
+                 <img data-menu="detail-shopee" src="images/cashless/shopee_icon.png" class="img-fluid img-responsive">
+             </div>
+         </div>
          <!-- Homepage Slider-->
          <!-- <div class="single-slider-boxed text-center owl-no-dots owl-carousel">
             <div class="card rounded-l shadow-l" data-card-height="320">
@@ -182,57 +212,57 @@
         </div> -->
         <!-- tutup homepage slider -->
 
-            <div class="card mt-4 preload-img" data-src="images/pictures/20s.jpg">
-                <div class="card-body">
-                    <h4 class="color-white">Built For You</h4>
-                    <p class="color-white">
-                        Our products suit your website, running incredibly fast and provide an unmatched UX and UI.
-                    </p>
-                    <div class="card card-style ml-0 mr-0 bg-white">
-                        <div class="row mt-3 pt-1 mb-3">
-                            <div class="col-6">
-                                <i class="float-left ml-3 mr-3" 
-                                data-feather="globe" 
-                                data-feather-line="1" 
-                                data-feather-size="35" 
-                                data-feather-color="blue2-dark" 
-                                data-feather-bg="blue2-fade-light">
-                            </i>
-                            <h5 class="color-black float-left font-13 font-500 line-height-s pb-3 mb-3">Mobile<br>Website</h5>
-                        </div>
+        <div class="card mt-4 preload-img" data-src="images/pictures/20s.jpg">
+            <div class="card-body">
+                <h4 class="color-white">Built For You</h4>
+                <p class="color-white">
+                    Our products suit your website, running incredibly fast and provide an unmatched UX and UI.
+                </p>
+                <div class="card card-style ml-0 mr-0 bg-white">
+                    <div class="row mt-3 pt-1 mb-3">
                         <div class="col-6">
                             <i class="float-left ml-3 mr-3" 
-                            data-feather="smartphone" 
+                            data-feather="globe" 
                             data-feather-line="1" 
                             data-feather-size="35" 
-                            data-feather-color="dark2-dark" 
-                            data-feather-bg="dark2-fade-light">
+                            data-feather-color="blue2-dark" 
+                            data-feather-bg="blue2-fade-light">
                         </i>
-                        <h5 class="color-black float-left font-13 font-500 line-height-s pb-3 mb-3">Mobile<br>PWA</h5>
+                        <h5 class="color-black float-left font-13 font-500 line-height-s pb-3 mb-3">Mobile<br>Website</h5>
                     </div>
                     <div class="col-6">
                         <i class="float-left ml-3 mr-3" 
-                        data-feather="user" 
+                        data-feather="smartphone" 
                         data-feather-line="1" 
                         data-feather-size="35" 
-                        data-feather-color="brown2-dark" 
-                        data-feather-bg="brown2-fade-light">
+                        data-feather-color="dark2-dark" 
+                        data-feather-bg="dark2-fade-light">
                     </i>
-                    <h5 class="color-black float-left font-13 font-500 line-height-s">Mobile<br>Website</h5>
+                    <h5 class="color-black float-left font-13 font-500 line-height-s pb-3 mb-3">Mobile<br>PWA</h5>
                 </div>
                 <div class="col-6">
                     <i class="float-left ml-3 mr-3" 
-                    data-feather="box" 
+                    data-feather="user" 
                     data-feather-line="1" 
                     data-feather-size="35" 
-                    data-feather-color="green1-dark" 
-                    data-feather-bg="green1-fade-light">
+                    data-feather-color="brown2-dark" 
+                    data-feather-bg="brown2-fade-light">
                 </i>
-                <h5 class="color-black float-left font-13 font-500 line-height-s">Mobile<br>PWA</h5>
+                <h5 class="color-black float-left font-13 font-500 line-height-s">Mobile<br>Website</h5>
             </div>
-
+            <div class="col-6">
+                <i class="float-left ml-3 mr-3" 
+                data-feather="box" 
+                data-feather-line="1" 
+                data-feather-size="35" 
+                data-feather-color="green1-dark" 
+                data-feather-bg="green1-fade-light">
+            </i>
+            <h5 class="color-black float-left font-13 font-500 line-height-s">Mobile<br>PWA</h5>
         </div>
+
     </div>
+</div>
 </div>
 <div class="card-overlay bg-highlight opacity-95"></div>
 <div class="card-overlay dark-mode-tint"></div>
@@ -315,26 +345,6 @@
     </div>
     <div class="card-overlay bg-highlight opacity-90"></div>
 </div>
-
-<div class="card card-style text-center">
-    <div class="content pb-2">
-        <h1>
-            <i data-feather="gift" 
-            data-feather-line="1" 
-            data-feather-size="55" 
-            data-feather-color="red2-dark" 
-            data-feather-bg="red2-fade-dark">
-        </i>
-    </h1>
-    <h3 class="font-700 mt-2">Purchase Today</h3>
-    <p class="font-12 mt-n1 color-highlight mb-3">Quality and Premium Features for You</p>
-    <p class="boxed-text-xl">
-        Fast, easy to use and filled with features. Give your site the Mobile Feeling it deserves.
-    </p>
-    <a href="#" class="btn btn-center-xl btn-m text-uppercase font-900 bg-highlight rounded-sm shadow-l">Buy now - $25</a>
-</div>
-</div>
-
 <!-- footer and footer card-->
 <div class="footer" data-menu-load="menu-footer.html"></div>  
 </div>    
@@ -396,7 +406,98 @@ data-menu-effect="menu-parallax">
     <i class="fa-ios-arrow fa fa-caret-down font-40"></i>
 </div>
 </div>
+<div id="menu-tips-1" 
+class="menu menu-box-modal menu-box-detached rounded-m" 
+data-menu-height="400" 
+data-menu-width="340" 
+data-menu-effect="menu-over">
 
+<div class="card header-card shape-rounded" data-card-height="200">
+    <div class="card-overlay bg-highlight opacity-95"></div>
+    <div class="card-overlay dark-mode-tint"></div>
+    <div class="card-bg preload-img" data-src="images/pictures/20s.jpg"></div>
+</div>
+
+<div class="mt-3 pt-1 pb-1">
+    <h1 class="text-center color-white font-22 font-700">7640736466</h1>
+    <p class="text-center mt-n3 mb-3 font-11 color-white">Yudi Pratama</p>
+</div>
+<div class="card card-style">
+    <p class="boxed-text-xl pt-3 mb-3">
+        <img src="images/cashless/qr_bca.png" style="width:75%">
+    </p>
+</div>       
+<div class="row mb-0">
+    <div class="col-6">
+        <a href="#" class="btn btn-border btn-sm ml-3 rounded-s btn-full shadow-l color-highlight border-highlight close-menu text-uppercase font-900">Close</a>
+    </div>
+    <div class="col-6">
+        <a href="#" class="btn btn-sm mr-3 rounded-s btn-full shadow-l bg-highlight font-900 text-uppercase">Copy</a>
+    </div>
+</div>
+</div> 
+
+<div id="detail-ovo" 
+class="menu menu-box-modal menu-box-detached rounded-m" 
+data-menu-height="400" 
+data-menu-width="340" 
+data-menu-effect="menu-over">
+
+<div class="card header-card shape-rounded" data-card-height="200">
+    <div class="card-overlay bg-highlight opacity-95"></div>
+    <div class="card-overlay dark-mode-tint"></div>
+    <div class="card-bg preload-img" data-src="images/pictures/20s.jpg"></div>
+</div>
+
+<div class="mt-3 pt-1 pb-1">
+    <h1 class="text-center color-white font-22 font-700">085156764403</h1>
+    <p class="text-center mt-n3 mb-3 font-11 color-white">Yudi Pratama</p>
+</div>
+<div class="card card-style">
+    <p class="boxed-text-xl pt-3 mb-3">
+        <img src="images/cashless/qr_ovo.png" style="width:75%">
+    </p>
+</div>       
+<div class="row mb-0">
+    <div class="col-6">
+        <a href="#" class="btn btn-border btn-sm ml-3 rounded-s btn-full shadow-l color-highlight border-highlight close-menu text-uppercase font-900">Close</a>
+    </div>
+    <div class="col-6">
+        <a href="#" class="btn btn-sm mr-3 rounded-s btn-full shadow-l bg-highlight font-900 text-uppercase">Copy</a>
+    </div>
+</div>
+</div> 
+
+<div id="detail-shopee" 
+class="menu menu-box-modal menu-box-detached rounded-m" 
+data-menu-height="400" 
+data-menu-width="340" 
+data-menu-effect="menu-over">
+
+<div class="card header-card shape-rounded" data-card-height="200">
+    <div class="card-overlay bg-highlight opacity-95"></div>
+    <div class="card-overlay dark-mode-tint"></div>
+    <div class="card-bg preload-img" data-src="images/pictures/20s.jpg"></div>
+</div>
+
+<div class="mt-3 pt-1 pb-1">
+    <h1 class="text-center color-white font-22 font-700">081219254503</h1>
+    <p class="text-center mt-n3 mb-3 font-11 color-white">Yudi Pratama</p>
+</div>
+<div class="card card-style">
+    <p class="boxed-text-xl pt-3 mb-3">
+        <img src="images/cashless/qr_shopee.png" style="width:75%">
+    </p>
+</div>       
+<div class="row mb-0">
+    <div class="col-6">
+        <a href="#" class="btn btn-border btn-sm ml-3 rounded-s btn-full shadow-l color-highlight border-highlight close-menu text-uppercase font-900">Close</a>
+    </div>
+    <div class="col-6">
+        <a href="#" class="btn btn-sm mr-3 rounded-s btn-full shadow-l bg-highlight font-900 text-uppercase">Copy</a>
+    </div>
+</div>
+</div> 
 
 </div>    
 
