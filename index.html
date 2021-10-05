@@ -81,7 +81,7 @@
         background: #fff;
     }
     #footer-bar{
-        width: 28%;
+        width: 30%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -93,6 +93,9 @@
         margin-left: 11%;
     }
     @media only screen and (max-width: 600px) {
+        .custome_text{
+            font-family: Lucida Handwriting !important;
+        }
         .tanggal_nikah{
             background: transparent;
         }
@@ -152,7 +155,7 @@
                         <h5>Walimatul 'Urs</h5>
                         <div class="row mb-0">
                             <div class="col-5 pr-0">
-                                <h4 class="custome_text" style="font-family: Lucida Handwriting !important;">Eka Astriyani S.Kom</h4>
+                                <h4 class="custome_text">Eka Astriyani S.Kom</h4>
                                 <small>Putri dari Pasangan</small>
                                 <h6 class="font-12">Erson & Sri Murni</h6>
                             </div>
@@ -261,10 +264,10 @@
                 <img src="images/cashless/gopay_icon.png" class="img-fluid img-responsive">
             </div>
             <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
-               <img data-menu="detail-shopee" src="images/cashless/shopee_icon.png" class="img-fluid img-responsive">
-           </div>
-       </div>
-       <!-- Homepage Slider-->
+             <img data-menu="detail-shopee" src="images/cashless/shopee_icon.png" class="img-fluid img-responsive">
+         </div>
+     </div>
+     <!-- Homepage Slider-->
          <!-- <div class="single-slider-boxed text-center owl-no-dots owl-carousel">
             <div class="card rounded-l shadow-l" data-card-height="320">
                 <div class="card-bottom">
@@ -570,7 +573,7 @@ data-menu-effect="menu-over">
         return false;
     };
     console.log(getUrlParameter('invite'))
-    $('.greeting-text').attr('data-username',getUrlParameter('invite'))
+    $('.greeting-text').attr('data-username',getUrlParameter('invite').toUpperCase())
     $('#myAudio').autoplay;
   //   function PlayMusic() {
   //     var x = document.getElementById("myAudio").autoplay;
