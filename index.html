@@ -8,7 +8,6 @@
     <meta name=description content="Eka &amp; Yudi are getting married on Saturday, 22 January 2022. Undangan pernikahan online" >
     <meta property="og:title" content="Eka &amp; Yudi Wedding" >
     <meta property="og:description" content="Eka &amp; Yudi are getting married on Saturday, 22 January 2022. Undangan pernikahan online" >
-    <meta property="og:image" content="images/favicon/yudieka.png" >
     <meta property="og:image:alt" content="Eka &amp; Yudi Wedding Image" >
     <title>Eka & Yudi</title>
     <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
@@ -143,10 +142,10 @@
                     <h2 data-username="Nama Tamu" class="greeting-text"></h2>
                     <!-- <a href="#" data-menu="menu-main" class="bg-fade-gray1-dark shadow-xl preload-img" data-src="images/avatars/5s.png"></a> -->
                 </div>
-                <div class="card header-card shape-rounded" data-card-height="250">
-                    <div class="card-overlay bg-highlight opacity-70"></div>
+                <div class="card header-card shape-rounded" data-card-height="210">
+                    <div class="card-overlay bg-highlight opacity-90"></div>
                     <div class="card-overlay dark-mode-tint"></div>
-                    <div class="card-bg preload-img" data-src="images/new/both3.png"></div>
+                    <div class="card-bg preload-img" data-src="images/pictures/20.jpg"></div>
                 </div>
                 <div class="card card-style">
                     <div class="content text-center">
@@ -571,6 +570,7 @@ data-menu-effect="menu-over">
         return false;
     };
     console.log(getUrlParameter('invite'))
+    $('.greeting-text').attr('data-username',getUrlParameter('invite'))
     $('#myAudio').autoplay;
   //   function PlayMusic() {
   //     var x = document.getElementById("myAudio").autoplay;
