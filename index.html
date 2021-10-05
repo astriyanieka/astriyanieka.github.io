@@ -15,6 +15,12 @@
     <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
     <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
     <style>
+    .card-style{
+        margin: 0px 10px 30px 10px;
+    }
+    .custome_text{
+        font-family: Lucida Handwriting !important;
+    }
     .icon_mempelai{
         margin-left: auto;
         margin-right: auto;
@@ -53,25 +59,52 @@
         border: 4px solid #323232;
         border-radius: 2px;
         padding: 10px;
+        background: #fff;
+    }
+    #footer-bar{
+        width: 28%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #body-theme-light{
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+    #content_countdown{
+        margin-left: 11%;
+    }
+@media only screen and (max-width: 600px) {
+    .tanggal_nikah{
         background: transparent;
     }
+    #footer-bar{
+        width: 100%;
+    }
+    #body-theme-light{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #content_countdown{
+        margin-left: 0px;
+    }
+}
 </style>
 </head>
 
-<body class="theme-light" data-highlight="blue2">
+<body class="theme-light" id="body-theme-light" data-highlight="blue2">
 
     <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
     
     <div id="page">
 
         <!-- header and footer bar go here-->
-        <div class="header header-fixed header-auto-show header-logo-app">
+       <!--  <div class="header header-fixed header-auto-show header-logo-app">
             <a href="index.html" class="header-title">AZURES</a>
             <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
             <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-dark"><i class="fas fa-sun"></i></a>
             <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-light"><i class="fas fa-moon"></i></a>
             <a href="#" data-menu="menu-highlights" class="header-icon header-icon-3"><i class="fas fa-brush"></i></a>
-        </div>
+        </div> -->
         <div id="footer-bar" class="footer-bar-5">
             <a href="index-components.html"><i data-feather="heart" data-feather-line="1" data-feather-size="21" data-feather-color="red2-dark" data-feather-bg="red2-fade-light"></i><span>Features</span></a>
             <a href="index-media.html"><i data-feather="image" data-feather-line="1" data-feather-size="21" data-feather-color="green1-dark" data-feather-bg="green1-fade-light"></i><span>Media</span></a>
@@ -79,11 +112,11 @@
             <a href="index-pages.html"><i data-feather="file" data-feather-line="1" data-feather-size="21" data-feather-color="brown1-dark" data-feather-bg="brown1-fade-light"></i><span>Pages</span></a>
             <a href="index-settings.html"><i data-feather="settings" data-feather-line="1" data-feather-size="21" data-feather-color="gray2-dark" data-feather-bg="gray2-fade-light"></i><span>Settings</span></a>
         </div>
-
+        <input type="hidden" id="webroot_path_global">
         <div class="page-content">
 
             <div class="page-title page-title-large">
-                <h2 data-username="Yudi Pratama" class="greeting-text"></h2>
+                <h2 data-username="Nama Tamu" class="greeting-text"></h2>
                 <a href="#" data-menu="menu-main" class="bg-fade-gray1-dark shadow-xl preload-img" data-src="images/avatars/5s.png"></a>
             </div>
             <div class="card header-card shape-rounded" data-card-height="210">
@@ -93,23 +126,47 @@
             </div>
             <div class="card card-style">
                 <div class="content text-center">
-                    <h5>The Wedding</h5>
-                    <h4 style="font-family: 'Source Sans Pro' !important;">Mempelai Pria & Mempelai Wanita</h4>
+                    <h5>Walimatul 'Urs</h5>
+                    <div class="row mb-0">
+                        <div class="col-5 pr-0">
+                        <h4 class="custome_text">Eka Astriyani S.Kom</h4>
+                        <small>Putri dari Pasangan</small>
+                        <h6 class="font-12">Erson & Sri Murni</h6>
+                        </div>
+                        <div class="col-2 pl-0 pr-0">
+                            <h4 class="custome_text">&</h4>
+                        </div>
+                        <div class="col-5 pl-0">
+                            <h4 class="custome_text">Yudi Pratama S.Kom</h4>
+                            <small>Putra dari Pasangan</small>
+                            <h6 class="font-12">Yuni Suprapto & Siti Komariah</h6>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="divider divider-small mb-3 bg-highlight"></div>
 
                 <div class="content">
                     <div class="d-flex mb-4 pb-3">
                         <div>
-                            <i class="fa fa-map-marked color-yellow1-dark fa-3x pt-3 icon-size"></i>
+                            <i class="fas fa-mosque fa-3x pt-3 icon-size"></i>
                         </div>
                         <div>
-                            <h5 class="font-16 font-600">Lokasi</h5>
-                            <p>
-                                We've included multiple styles you can choose to match your exact project needs.
-                            </p>
+                            <h5 class="font-16 font-600">Akad Nikah</h5>
+                            <h6>Sabtu, 22 Januari 2022, 09:00 - 10:00</h6>
+                            <small>Mushola Al-Munawaroh, Graha Mitra Citra Blok G RT 09/02, Panongan, Tangerang, Banten</small>
                         </div>
-                    </div>     
+                    </div>    
+                    <div class="d-flex mb-4 pb-3">
+                        <div>
+                            <i class="fa fa-map-marked fa-3x pt-3 icon-size"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-16 font-600">Resepsi</h5>
+                            <h6>Sabtu, 22 Januari 2022, 10:00 - Selesai</h6>
+                            <small>Kediaman Mempelai Wanita, Graha Mitra Citra Blok G RT 09/02, Panongan, Tangerang, Banten</small>
+                        </div>
+                    </div>  
                 </div>
             </div>
             
@@ -122,9 +179,9 @@
             ">
             <div class="content">
                 <div class="text-center" style="margin-top:60px">
-                        <h1 style="font-size:40px;font-family: Lucida Handwriting !important;">Save The Date</h1>
+                    <h1 style="font-size:40px;font-family: Lucida Handwriting !important;">Save The Date</h1>
                 </div>            
-                <div class="d-flex mb-2">
+                <div class="d-flex mb-2" id="content_countdown">
                     <div class="tanggal_nikah"></div>
                 </div>   
             </div>
@@ -142,7 +199,7 @@
                     <div class="card card-style" style="margin: 0px 5px 30px 5px;background-color:transparent;">
                         <img src="images/pictures/cewek.png" class="img-fluid icon_mempelai">
                         <div class="content pb-0">
-                            <p>Mempelai Wanita</p>
+                            <h6 class="custome_text">Eka Astriyani</h6>
                         </div>            
                     </div>        
                 </div>
@@ -150,7 +207,7 @@
                     <div class="card card-style" style="margin: 0px 5px 30px 5px;background-color:transparent;">
                         <img src="images/pictures/cowok.png" class="img-fluid icon_mempelai">
                         <div class="content pb-0">
-                            <p>Mempelai Pria</p>
+                            <h6 class="custome_text">Yudi Pratama</h6>
                         </div>            
                     </div>        
                 </div>
@@ -181,10 +238,10 @@
             <img src="images/cashless/gopay_icon.png" class="img-fluid img-responsive">
         </div>
         <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
-         <img data-menu="detail-shopee" src="images/cashless/shopee_icon.png" class="img-fluid img-responsive">
-     </div>
- </div>
- <!-- Homepage Slider-->
+           <img data-menu="detail-shopee" src="images/cashless/shopee_icon.png" class="img-fluid img-responsive">
+       </div>
+   </div>
+   <!-- Homepage Slider-->
          <!-- <div class="single-slider-boxed text-center owl-no-dots owl-carousel">
             <div class="card rounded-l shadow-l" data-card-height="320">
                 <div class="card-bottom">
@@ -467,7 +524,7 @@ data-menu-effect="menu-over">
 <script type="text/javascript" src="scripts/dscountdown.js"></script>
 <script>
     $('.tanggal_nikah').dsCountDown({
-        endDate: new Date("December 24, 2021 23:59:00"),
+        endDate: new Date("January 22, 2022 09:00:00"),
         titleDays: 'Hari',
         titleHours: 'Jam',
         titleMinutes: 'Menit',
@@ -491,6 +548,7 @@ data-menu-effect="menu-over">
     };
 
     console.log(getUrlParameter('invite'))
-
+    var audio = new Audio($('#webroot_path_global').val() + 'music/ed_perfect.mp3')
+    audio.play()
 </script>
 </body>
