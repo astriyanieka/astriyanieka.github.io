@@ -551,13 +551,14 @@ data-menu-effect="menu-over">
         return false;
     };
     console.log(getUrlParameter('invite'))
-    function PlayMusic() {
-      var x = document.getElementById("myAudio").autoplay;
-  }
+    $('#myAudio').autoplay()
+  //   function PlayMusic() {
+  //     var x = document.getElementById("myAudio").autoplay;
+  // }
   setTimeout(function(){
        // var audio = new Audio($('#webroot_path_global').val() + 'music/ed_perfect.mp3')
        // audio.play()
-       PlayMusic()
+       // PlayMusic()
    }, 2000);
 </script>
 </body>
