@@ -73,21 +73,21 @@
     #content_countdown{
         margin-left: 11%;
     }
-@media only screen and (max-width: 600px) {
-    .tanggal_nikah{
-        background: transparent;
+    @media only screen and (max-width: 600px) {
+        .tanggal_nikah{
+            background: transparent;
+        }
+        #footer-bar{
+            width: 100%;
+        }
+        #body-theme-light{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        #content_countdown{
+            margin-left: 0px;
+        }
     }
-    #footer-bar{
-        width: 100%;
-    }
-    #body-theme-light{
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    #content_countdown{
-        margin-left: 0px;
-    }
-}
 </style>
 </head>
 
@@ -129,9 +129,9 @@
                     <h5>Walimatul 'Urs</h5>
                     <div class="row mb-0">
                         <div class="col-5 pr-0">
-                        <h4 class="custome_text">Eka Astriyani S.Kom</h4>
-                        <small>Putri dari Pasangan</small>
-                        <h6 class="font-12">Erson & Sri Murni</h6>
+                            <h4 class="custome_text">Eka Astriyani S.Kom</h4>
+                            <small>Putri dari Pasangan</small>
+                            <h6 class="font-12">Erson & Sri Murni</h6>
                         </div>
                         <div class="col-2 pl-0 pr-0">
                             <h4 class="custome_text">&</h4>
@@ -546,9 +546,10 @@ data-menu-effect="menu-over">
         }
         return false;
     };
-
     console.log(getUrlParameter('invite'))
-    var audio = new Audio($('#webroot_path_global').val() + 'music/ed_perfect.mp3')
-    audio.play()
+    setTimeout(function(){
+     var audio = new Audio($('#webroot_path_global').val() + 'music/ed_perfect.mp3')
+     audio.play()
+ }, 2000);
 </script>
 </body>
