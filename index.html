@@ -32,6 +32,12 @@
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <style>
+    .card_save_the_date{
+        background: url(images/background/bg8.png) top center no-repeat;
+        background-size: cover;
+        background-position: center !important;
+        height: 290px;
+    }
     #myAudio{
         display: none;
     }
@@ -78,8 +84,8 @@
         display:inline-flex;text-align:center;
         border: 4px solid #323232;
         border-radius: 2px;
-        padding: 10px;
-        background: #fff;
+        padding: 5px;
+        background: #F0F0F0;
     }
     #footer-bar{
         width: 30%;
@@ -91,14 +97,14 @@
         padding-right: 35%;
     }
     #content_countdown{
-        margin-left: 11%;
+        margin-left: 14%;
     }
     @media only screen and (max-width: 600px) {
         .custome_text{
             font-family: Lucida Handwriting !important;
         }
         .tanggal_nikah{
-            background: transparent;
+            background: #F0F0F0;
         }
         #footer-bar{
             width: 100%;
@@ -108,7 +114,7 @@
             padding-right: 0px;
         }
         #content_countdown{
-            margin-left: 0px;
+            margin-left: 15px;
         }
     }
 </style>
@@ -197,78 +203,72 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-up" class="card card-style" style="
-                background-image: url(images/background/bg8.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center !important;
-                height: 270px;
-                ">
-                <div class="content">
-                    <div class="text-center" style="margin-top:60px">
-                        <h1 style="font-size:40px;font-family: Lucida Handwriting !important;">Save The Date</h1>
-                    </div>            
-                    <div class="d-flex mb-2" id="content_countdown">
-                        <div class="tanggal_nikah"></div>
-                    </div>   
-                </div>
-            </div>
-
-            <div data-aos="fade-up" class="card card-style text-center" style="background-image:url('images/background/bg1.png');background-repeat: no-repeat;
-            background-size: cover;">
-            <div class="content pb-2">
-                <br>
-                <p class="boxed-text-xl">
-                    Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah Semoga ridho-Mu tercerah mengiringi pernikahan kami :
-                </p>
-                <div class="row mb-0">
-                    <div class="col-6 pr-0 pl-0" data-aos="fade-right">
-                        <div class="card card-style" style="margin: 0px 5px 30px 5px;background-color:transparent;">
-                            <img src="images/pictures/cewek.png" class="img-fluid icon_mempelai">
-                            <div class="content pb-0">
-                                <h6 class="custome_text">Eka Astriyani</h6>
-                            </div>            
-                        </div>        
+                <div data-aos="fade-up" class="card card-style card_save_the_date">
+                    <div class="content">
+                        <div class="text-center" style="margin-top:60px">
+                            <h1 class="custome_text" style="padding-top:10px">Save The Date</h1>
+                        </div>            
+                        <div class="d-flex mb-2" id="content_countdown">
+                            <div class="tanggal_nikah"></div>
+                        </div>   
                     </div>
-                    <div class="col-6 pl-0 pr-0" data-aos="fade-left">
-                        <div class="card card-style" style="margin: 0px 5px 30px 5px;background-color:transparent;">
-                            <img src="images/pictures/cowok.png" class="img-fluid icon_mempelai">
-                            <div class="content pb-0">
-                                <h6 class="custome_text">Yudi Pratama</h6>
-                            </div>            
-                        </div>        
+                </div>
+
+                <div data-aos="fade-up" class="card card-style text-center" style="background-image:url('images/background/bg1.png');background-repeat: no-repeat;
+                background-size: cover;">
+                <div class="content pb-2">
+                    <br>
+                    <p class="boxed-text-xl">
+                        Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah Semoga ridho-Mu tercerah mengiringi pernikahan kami :
+                    </p>
+                    <div class="row mb-0">
+                        <div class="col-6 pr-0 pl-0" data-aos="fade-right">
+                            <div class="card card-style" style="margin: 0px 5px 30px 5px;background-color:transparent;">
+                                <img src="images/pictures/cewek.png" class="img-fluid icon_mempelai">
+                                <div class="content pb-0">
+                                    <h6 class="custome_text">Eka Astriyani</h6>
+                                </div>            
+                            </div>        
+                        </div>
+                        <div class="col-6 pl-0 pr-0" data-aos="fade-left">
+                            <div class="card card-style" style="margin: 0px 5px 30px 5px;background-color:transparent;">
+                                <img src="images/pictures/cowok.png" class="img-fluid icon_mempelai">
+                                <div class="content pb-0">
+                                    <h6 class="custome_text">Yudi Pratama</h6>
+                                </div>            
+                            </div>        
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div data-aos="fade-up" data-card-height="200" class="card card-style bg_quotes1" style="height: 200px;">
-            <div class="card-center">
-                <p class="color-white pr-3 pl-3 mb-0">
-                    <i class="fa fa-quote-left pr-2"></i>Menikah itu cinta yang diberkahi karena awalnya janji, Selanjutnya adalah ibadah dan penghujungnya insya allah ridho illahi<i class="fa fa-quote-right pl-2"></i>
-                </p>
+            <div data-aos="fade-up" data-card-height="200" class="card card-style bg_quotes1" style="height: 200px;">
+                <div class="card-center">
+                    <p class="color-white pr-3 pl-3 mb-0">
+                        <i class="fa fa-quote-left pr-2"></i>Menikah itu cinta yang diberkahi karena awalnya janji, Selanjutnya adalah ibadah dan penghujungnya insya allah ridho illahi<i class="fa fa-quote-right pl-2"></i>
+                    </p>
+                </div>
+                <div class="card-overlay bg-black opacity-40"></div>
             </div>
-            <div class="card-overlay bg-black opacity-40"></div>
-        </div>
-        <div class="content mb-2">
-            <h5 class="float-left font-16 font-500">Kirim Kado / Cashless Gift</h5>
-            <div class="clearfix"></div>
-        </div>
+            <div class="content mb-2">
+                <h5 class="float-left font-16 font-500">Kirim Kado / Cashless Gift</h5>
+                <div class="clearfix"></div>
+            </div>
 
-        <div class="double-slider text-center owl-carousel owl-no-dots">
-            <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
-                <img data-menu="menu-tips-1" src="images/cashless/bca_icon.png" class="img-fluid img-responsive">
-            </div>
-            <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
-                <img data-menu="detail-ovo" src="images/cashless/ovo_icon.png" class="img-fluid img-responsive">
-            </div>
-            <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
-                <img src="images/cashless/gopay_icon.png" class="img-fluid img-responsive">
-            </div>
-            <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
-               <img data-menu="detail-shopee" src="images/cashless/shopee_icon.png" class="img-fluid img-responsive">
+            <div class="double-slider text-center owl-carousel owl-no-dots">
+                <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
+                    <img data-menu="menu-tips-1" src="images/cashless/bca_icon.png" class="img-fluid img-responsive">
+                </div>
+                <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
+                    <img data-menu="detail-ovo" src="images/cashless/ovo_icon.png" class="img-fluid img-responsive">
+                </div>
+                <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
+                    <img src="images/cashless/gopay_icon.png" class="img-fluid img-responsive">
+                </div>
+                <div class="item bg-theme rounded-m shadow-m box_payment_cashless">
+                   <img data-menu="detail-shopee" src="images/cashless/shopee_icon.png" class="img-fluid img-responsive">
+               </div>
            </div>
-       </div>
-       <!-- Homepage Slider-->
+           <!-- Homepage Slider-->
          <!-- <div class="single-slider-boxed text-center owl-no-dots owl-carousel">
             <div class="card rounded-l shadow-l" data-card-height="320">
                 <div class="card-bottom">
@@ -499,13 +499,5 @@ data-menu-effect="menu-over">
     console.log(getUrlParameter('invite'))
     $('.greeting-text').attr('data-username',getUrlParameter('invite').toUpperCase())
     $('#myAudio').autoplay;
-  //   function PlayMusic() {
-  //     var x = document.getElementById("myAudio").autoplay;
-  // }
-  setTimeout(function(){
-       // var audio = new Audio($('#webroot_path_global').val() + 'music/ed_perfect.mp3')
-       // audio.play()
-       // PlayMusic()
-   }, 2000);
 </script>
 </body>
