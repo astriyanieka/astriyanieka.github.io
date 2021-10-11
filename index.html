@@ -141,11 +141,9 @@
             <a href="index-pages.html"><i data-feather="file" data-feather-line="1" data-feather-size="21" data-feather-color="brown1-dark" data-feather-bg="brown1-fade-light"></i><span>Pages</span></a>
             <a href="index-settings.html"><i data-feather="settings" data-feather-line="1" data-feather-size="21" data-feather-color="gray2-dark" data-feather-bg="gray2-fade-light"></i><span>Settings</span></a>
         </div>
-        <audio id="myAudio" controls autoplay>
-          <source src="music/ed_perfect.mp3" type="audio/ogg">
-              <source src="music/ed_perfect.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-              </audio>
+                <audio id="myAudio" loop>
+                    <source src="music/ed_perfect.mp3" type="audio/mp3">
+                </audio>
               <div class="page-content">
 
                 <div class="page-title page-title-large">
@@ -498,6 +496,5 @@ data-menu-effect="menu-over">
     };
     console.log(getUrlParameter('invite'))
     $('.greeting-text').attr('data-username',getUrlParameter('invite').toUpperCase())
-    $('#myAudio').autoplay;
-</script>
+    document.getElementById("myAudio").play();</script>
 </body>
