@@ -30,6 +30,7 @@
 
     <!-- Custom  sCss -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CCuprum%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNiconne%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontez%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPlayfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CKhand%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CCrete+Round%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAbril+Fatface%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMedula+One%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CABeeZee%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDancing+Script%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&ver=5.7.2" />
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
@@ -76,6 +77,7 @@
         left: 40%;
     }
     .text_custome_quote{
+        color : #000;
         font-family: "Sofia", sans-serif;
         text-shadow: 2px 2px 2px #ababab;
         font-size: 18px;
@@ -87,6 +89,21 @@
         font-family: "Sofia", sans-serif;
         font-size: 20px;
         font-color: #000;
+    }
+    .garis_horizontal{
+        border-top: 1px solid #000;
+        width: 30%;
+    }
+    .background_silver{
+        background-color: #b8c6db;
+        background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    }
+    .font_dancing{
+        font-family: "Dancing Script", cursive;
+        font-weight: 900;
+    }
+    #embed_google_maps{
+            border: 4px solid #b8c6db;
     }
     @media only screen and (max-width:768px) {
         #text_walimatul_urs{
@@ -108,51 +125,6 @@
 </head>
 
 <body>
-
-    <!--Navbar Start-->
-       <!--  <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
-        <div class="container-fluid"> -->
-            <!-- LOGO -->
-                <!-- <a class="logo text-uppercase" href="index.html">
-                    <img src="images/logo-light.png" alt="" class="logo-light" height="24" />
-                    <img src="images/logo-dark.png" alt="" class="logo-dark" height="24" />
-                </a> -->
-
-               <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="mdi mdi-menu"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
-                        <li class="nav-item active">
-                            <a href="#home" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#services" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#features" class="nav-link">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#demos" class="nav-link">Demos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#clients" class="nav-link">Clients</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#pricing" class="nav-link">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                    <button class="btn btn-sm btn-primary btn-rounded navbar-btn">Try for Free</button>
-
-                </div> -->
-            <!-- </div>
-        </nav>
-    -->        <!-- Navbar End -->
-
-
     <!-- home start -->
     <section class="bg-home" id="home" style="padding-top:100px">
         <div class="container-fluid">
@@ -270,133 +242,46 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="demo-box text-center card p-2">
-                            <a href="#" class="text-dark">
-                                <div class="position-relative demo-content">
-                                    <div class="demo-img">
-                                        <img src="images/demo/demo-1.jpg" alt="" class="img-fluid mx-auto d-block rounded">
-                                    </div>
-                                    <div class="demo-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div class="overlay-content">
-                                        <h5 class="font-16 m-0">Light Layouts</h5>
-                                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="card background_silver">
+                            <div class="card-body ">
+                                <div class="text-center">
+                                    <i class="far fa-calendar-alt fa-3x"></i>
+                                    <h1 class="font_dancing">Akad Nikah</h1>
+                                    <p class="tanggal_nikah">Sabtu, 22 January 2022</p>
+                                    <hr class="garis_horizontal mt-4 mb-4">
+                                    <h1 class="font_dancing">Pukul</h1>
+                                    <p class="jam_nikah">09.00 - 10.00 WIB</p>
+                                    <h1 class="font_dancing">Lokasi</h1>
+                                    <p class="jam_nikah">Kediaman Mempelai Wanita, Graha Mitra Citra Blok G RT 09/02, Panongan, Tangerang, Banten</p>
                                 </div>
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="demo-box text-center card p-2">
-                            <a href="#" class="text-dark">
-                                <div class="position-relative demo-content">
-                                    <div class="demo-img">
-                                        <img src="images/demo/demo-2.jpg" alt="" class="img-fluid mx-auto d-block rounded">
-                                    </div>
-                                    <div class="demo-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div class="overlay-content">
-                                        <h5 class="font-16 m-0">Dark Leftbar & Light Topbar</h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="demo-box text-center card p-2">
-                            <a href="#" class="text-dark">
-                                <div class="position-relative demo-content">
-                                    <div class="demo-img">
-                                        <img src="images/demo/demo-3.jpg" alt="" class="img-fluid mx-auto d-block rounded">
-                                    </div>
-                                    <div class="demo-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div class="overlay-content">
-                                        <h5 class="font-16 m-0">Dark Layouts</h5>
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="demo-box text-center card p-2">
-                            <a href="#" class="text-dark">
-                                <div class="position-relative demo-content">
-                                    <div class="demo-img">
-                                        <img src="images/demo/demo-4.jpg" alt="" class="img-fluid mx-auto d-block rounded">
-                                    </div>
-                                    <div class="demo-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div class="overlay-content">
-                                        <h5 class="font-16 m-0">RTL Layout</h5>
-                                    </div>
+                    <div class="col-lg-5">
+                        <div class="card background_silver">
+                            <div class="card-body ">
+                                <div class="text-center">
+                                    <i class="far fa-calendar-alt fa-3x"></i>
+                                    <h1 class="font_dancing">Resepsi Nikah</h1>
+                                    <p class="tanggal_nikah">Sabtu, 22 January 2022</p>
+                                    <hr class="garis_horizontal mt-4 mb-4">
+                                    <h1 class="font_dancing">Pukul</h1>
+                                    <p class="jam_nikah">11.00 WIB - Selesai</p>
+                                    <h1 class="font_dancing">Lokasi</h1>
+                                    <p class="jam_nikah">Kediaman Mempelai Wanita, Graha Mitra Citra Blok G RT 09/02, Panongan, Tangerang, Banten</p>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="demo-box text-center card p-2">
-                            <a href="#" class="text-dark">
-                                <div class="position-relative demo-content">
-                                    <div class="demo-img">
-                                        <img src="images/demo/demo-5.jpg" alt="" class="img-fluid mx-auto d-block rounded">
-                                    </div>
-                                    <div class="demo-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div class="overlay-content">
-                                        <h5 class="font-16 m-0">Horizontal Layouts</h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="demo-box text-center card p-2">
-                            <a href="#" class="text-dark">
-                                <div class="position-relative demo-content">
-                                    <div class="demo-img">
-                                        <img src="images/demo/demo-6.jpg" alt="" class="img-fluid mx-auto d-block rounded">
-                                    </div>
-                                    <div class="demo-overlay">
-                                        <div class="overlay-icon">
-                                            <i class="pe-7s-expand1 h1 text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div class="overlay-content">
-                                        <h5 class="font-16 m-0">Landing Page</h5>
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- row end -->
                 <div class="row">
-                    <div class="col-12">
-                        <div class="text-center mt-4">
-                            <button class="btn btn-primary btn-rounded">More Demos <i class="mdi mdi-arrow-right ml-1"></i></button>
-                        </div>
+                    <div class="col-2"></div>
+                    <div class="col-8 pl-0 pr-0" id="embed_google_maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.73470754816543!2d106.53534616770511!3d-6.279810398927474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fd7b1b4e2991%3A0xbefde5d9c59999dd!2sMushola%20Al-Munawarroh!5e0!3m2!1sid!2sid!4v1635208454951!5m2!1sid!2sid" width="853" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
+                    <div class="col-2"></div>
                 </div>
                 <!-- row end -->
 
