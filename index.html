@@ -30,6 +30,7 @@
 
     <!-- Custom  sCss -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/dscountdown.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CCuprum%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNiconne%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontez%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPlayfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CKhand%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CCrete+Round%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAbril+Fatface%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMedula+One%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CABeeZee%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDancing+Script%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&ver=5.7.2" />
@@ -88,7 +89,7 @@
     .text_ucapan{
         font-family: "Sofia", sans-serif;
         font-size: 20px;
-        font-color: #000;
+        color: #000;
     }
     .garis_horizontal{
         border-top: 1px solid #000;
@@ -103,9 +104,75 @@
         font-weight: 900;
     }
     #embed_google_maps{
-            border: 4px solid #b8c6db;
+        border: 4px solid #b8c6db;
+    }
+    .tanggal_nikah{
+        color: #000;
+    }
+    .jam_nikah{
+        color: #000;
+    }
+    .embed-container { 
+        position: relative; 
+        padding-bottom: 26.25%;
+        height: 0; 
+        overflow:hidden; 
+        max-width: 100%; 
+    } 
+    #give_wish{
+        display: inline;
+    }
+    .embed-container iframe, .embed-container object, .embed-container embed { 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+    }
+    .btn-silver{
+        background: #b8c6db;
+        border: 1px solid #b8c6db;
+        color: #000;
+        font-weight: 900;
+    }
+    .btn-silver:hover{
+        background: #fff;
+        color: #000;
+        font-weight: 900;
+    }
+    .dsCountDown.ds-white{
+        border: 4px solid #b8c6db;
+        background: #b8c6db;
+        width: 60%;
+        font-size: 20px;
+    }
+    .dsCountDown .ds-element-days{
+        width: 24%;
+    }
+    .dsCountDown .ds-element-hours{
+        width: 24%;
+    }
+    .dsCountDown .ds-element-minutes{
+        width: 24%;
+    }
+    .dsCountDown .ds-element-seconds{
+        width: 23%;
+    }
+    .ds-element .ds-element-value{
+        line-height: 60px;
+        font-family: "Playfair Display", Sans-serif;
+    }
+    .display_inline_image{
+        display: inline;
     }
     @media only screen and (max-width:768px) {
+        .dsCountDown.ds-white{
+            width: 100%;
+        }
+        .ds-white .ds-element{
+            margin-right: 0px;
+            padding-right: 0px;
+        }
         #text_walimatul_urs{
             padding-top: 0px;
         }
@@ -119,6 +186,15 @@
             width: 300px;
             position: absolute;
             left: 10%;
+        }
+        .embed-container{
+            padding-bottom: 56.25%; 
+        }
+        #give_wish{
+            font-size: 27px;
+        }
+        .display_inline_image{
+            width: 50px;
         }
     }
 </style>
@@ -277,218 +353,44 @@
                 </div>
                 <!-- row end -->
                 <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-8 pl-0 pr-0" id="embed_google_maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.73470754816543!2d106.53534616770511!3d-6.279810398927474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fd7b1b4e2991%3A0xbefde5d9c59999dd!2sMushola%20Al-Munawarroh!5e0!3m2!1sid!2sid!4v1635208454951!5m2!1sid!2sid" width="853" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8 pl-0 pr-0 embed-container" id="embed_google_maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.4693185488418!2d106.53545282917776!3d-6.279861099715922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTYnNDcuNSJTIDEwNsKwMzInMDkuNiJF!5e0!3m2!1sid!2sid!4v1635290726238!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
-                    <div class="col-2"></div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-12 text-center mt-2">
+                        <a href="https://goo.gl/maps/TEt6AVN6aKANDkgt9" class="btn btn-silver"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi</a>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <h1 class="mb-3 font_dancing">Save The Date</h1>
+                        <div class="countdown_tanggal_nikah"></div>
+                    </div>
                 </div>
                 <!-- row end -->
 
             </div>
             <!-- container-fluid end -->
+            <div class="bg-pattern-effect">
+                <img src="images/bg-pattern_grey.png" alt="">
+            </div>
         </section>
         <!-- available demos end -->
 
-        <!-- pricing start -->
-        <section class="section bg-gradient pb-0" id="pricing">
-            <div class="bg-pattern-effect">
-                <img src="images/bg-pattern-2.png" alt="">
-            </div>
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="title text-center mb-5">
-                            <h5 class="text-white-50 small-title">Pricing</h5>
-                            <h3 class="text-white">Choose your plan</h3>
-                            <p class="text-white">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- row end -->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body p-4">
-                                <div class="row">
-
-                                    <div class="col-md-4">
-                                        <div class="text-center text-md-left">
-                                            <div class="mb-5">
-                                                <i class="pe-7s-helm h1"></i>
-                                            </div>
-                                            <div>
-                                                <h5 class="font-18">Free</h5>
-                                                <p class="mb-4 mb-md-0">Sed ut perspiciatis</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="text-center">
-                                            <p>Customer support</p>
-                                            <p>Free Updates</p>
-                                            <p>1 Domain</p>
-                                            <p class="mb-4 mb-md-0">24 x 7 Support</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="text-md-right text-center">
-                                            <h3><sup><small>$</small></sup>00</h3>
-                                            <p class="mb-5">Per License</p>
-                                            <div>
-                                                <a href="#" class="btn btn-success btn-rounded">Purchase Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body p-4">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="text-center text-md-left">
-                                            <div class="mb-5">
-                                                <i class="pe-7s-box2 h1"></i>
-                                            </div>
-                                            <div>
-                                                <h5 class="font-18">Single</h5>
-                                                <p class="mb-4 mb-md-0">Sed ut perspiciatis</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="text-center">
-                                            <p>Customer support</p>
-                                            <p>Free Updates</p>
-                                            <p>1 Domain</p>
-                                            <p class="mb-4 mb-md-0">24 x 7 Support</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="text-md-right text-center">
-                                            <h3><sup><small>$</small></sup>24</h3>
-                                            <p class="mb-5">Per License</p>
-                                            <div>
-                                                <a href="#" class="btn btn-success btn-rounded">Purchase Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body p-4">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="text-center text-md-left">
-                                            <div class="mb-5">
-                                                <i class="pe-7s-photo-gallery h1"></i>
-                                            </div>
-                                            <div>
-                                                <h5 class="font-18">Multiple</h5>
-                                                <p class="mb-4 mb-md-0">Sed ut perspiciatis</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="text-center">
-                                            <p>Customer support</p>
-                                            <p>Free Updates</p>
-                                            <p>1 Domain</p>
-                                            <p class="mb-4 mb-md-0">24 x 7 Support</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="text-md-right text-center">
-                                            <h3><sup><small>$</small></sup>120</h3>
-                                            <p class="mb-5">Per License</p>
-                                            <div>
-                                                <a href="#" class="btn btn-success btn-rounded">Purchase Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body p-4">
-                                <div class="row">
-
-                                    <div class="col-md-4">
-                                        <div class="text-center text-md-left">
-                                            <div class="mb-5">
-                                                <i class="pe-7s-shield h1"></i>
-                                            </div>
-                                            <div>
-                                                <h5 class="font-18">Extended</h5>
-                                                <p class="mb-4 mb-md-0">Sed ut perspiciatis</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="text-center">
-
-                                            <p>Customer support</p>
-                                            <p>Free Updates</p>
-                                            <p>1 Domain</p>
-                                            <p class="mb-4 mb-md-0">24 x 7 Support</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="text-md-right text-center">
-                                            <h3><sup><small>$</small></sup>999</h3>
-                                            <p class="mb-5">Per License</p>
-                                            <div>
-                                                <a href="#" class="btn btn-success btn-rounded">Purchase Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- container-fluid end -->
-        </section>
-        <!-- pricing end -->
-
         <!-- contact us start -->
-        <section class="section pb-lg-0" id="contact">
+        <section class="section pb-lg-0 bg-light pt-0" id="contact">
+            
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-5">
-                        <div class="title text-center mb-4">
-                            <h5 class="text-primary small-title">Contact</h5>
-                            <h3>Get in Touch</h3>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
+                        <div class="title text-center">
+                            <img src="https://nadiaozi.datengdong.com/themes/twelve/images/content/leaves-left.png" class="display_inline_image" width="100">
+                            <h1 class="mb-3 font_dancing" id="give_wish">GIVE A WISHES</h1>
+                            <img src="https://nadiaozi.datengdong.com/themes/twelve/images/content/leaves-right.png" class="display_inline_image" width="100">
                         </div>
                     </div>
                 </div>
                 <!-- row end -->
                 <div class="row align-items-end">
-                    <div class="col-lg-6">
-                        <div class="contact-img d-none d-lg-block">
-                            <img src="images/contact-us.svg" alt="" class="img-fluid mx-auto d-block">
-                        </div>
-                    </div>
                     <div class="col-lg-6">
                         <div class="card contact-form mb-lg-0">
                             <div class="custom-form p-5">
@@ -531,7 +433,11 @@
 
                         </div>
                     </div>
-
+                    <div class="col-lg-6">
+                        <div class="contact-img d-none d-lg-block">
+                            <img src="images/contact-us.svg" alt="" class="img-fluid mx-auto d-block">
+                        </div>
+                    </div>
                 </div>
                 <!-- row end -->
             </div>
@@ -634,8 +540,16 @@
 
         <!-- custom js -->
         <script src="js/app.js"></script>
+        <script src="js/dscountdown.js"></script>
         <script>
             document.getElementById("myAudio").play();
+            $('.countdown_tanggal_nikah').dsCountDown({
+                endDate: new Date("January 22, 2022 09:00:00"),
+                titleDays: 'Hari',
+                titleHours: 'Jam',
+                titleMinutes: 'Menit',
+                titleSeconds: 'Detik'
+            });
         </script>
     </body>
 
